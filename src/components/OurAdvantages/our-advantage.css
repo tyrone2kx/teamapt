@@ -1,0 +1,89 @@
+.card1 {
+    animation: cardAnimation 1.2s ease-in-out 5.2s forwards; 
+}
+.card2 {
+    animation: cardAnimation 1.2s ease-in-out 3.9s forwards; 
+}
+.card3 {
+    animation: cardAnimation 1.2s ease-in-out 2.7s forwards; 
+}
+.card4 {
+    animation: cardAnimation 1.2s ease-in-out 1.5s forwards; 
+}
+
+.card-container {
+    animation: slideUpAnimation 1s ease-in-out forwards; 
+}
+
+@keyframes slideUpAnimation {
+    from {
+      transform: translateY(100%); /* Start at the bottom of the screen */
+    }
+    to {
+      transform: translateY(0); /* Slide up to the original position */
+    }
+  }
+
+
+@keyframes card4 {
+    0% {
+        transform: rotate(-5deg);
+    }
+    10% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-10deg) ;
+    }
+    100% {
+        transform: rotate(-10deg) translateY(-500%) ;
+    }
+  }
+
+@keyframes card1 {
+    0% {
+        transform: rotate(-35deg);
+    }
+    50% {
+        transform: rotate(-40deg) ;
+    }
+    100% {
+        transform: rotate(-40deg) translateY(-500%) ;
+    }
+  }
+
+@keyframes card2 {
+    0% {
+        transform: rotate(-25deg);
+    }
+    50% {
+        transform: rotate(-30deg) ;
+    }
+    100% {
+        transform: rotate(-30deg) translateY(-500%) ;
+    }
+  }
+
+@keyframes card3 {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(-20deg) ;
+    }
+    100% {
+        transform: rotate(-20deg) translateY(-500%) ;
+    }
+  }
+
+@keyframes cardAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-5deg) ;
+    }
+    100% {
+        transform: rotate(-5deg) translateY(-500%) ;
+    }
+  }

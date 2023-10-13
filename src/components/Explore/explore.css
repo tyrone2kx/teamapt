@@ -1,0 +1,72 @@
+.flip-container {
+    perspective: 1000px; /* Set a perspective for the 3D effect */
+  }
+  
+  .flipInA {
+    transform-style: preserve-3d;
+    animation: flipAnimationA 1s ease-in-out forwards;
+  }
+
+
+@keyframes flipAnimationA {
+    0% {
+        opacity: 0.3;
+      transform: rotateY(90deg);
+    }
+    100% {
+        opacity: 1;
+      transform: rotateY(180deg); /* Flip to 180 degrees on the y-axis */
+    }
+  }
+  
+  .flipInB {
+    transform-style: preserve-3d;
+    animation: flipAnimationB 1s ease-in-out forwards;
+  }
+
+
+@keyframes flipAnimationB {
+    0% {
+        opacity: 0.3;
+      transform: rotateY(270deg);
+    }
+    100% {
+        opacity: 1;
+      transform: rotateY(180deg); /* Flip to 180 degrees on the y-axis */
+    }
+  }
+
+.moveUpCol {
+    animation: moveUpCol 3s ease-in-out 1s forwards alternate ;
+}
+
+.moveDownCol {
+    transform: translateY(-190px);
+    animation: moveDownCol 3s ease-in-out 1s forwards;
+}
+
+
+@keyframes moveDownCol {
+    0% {
+      transform: translateY(-190px); 
+    }
+    50% {
+      transform: translateY(135px); 
+    }
+    100% {
+      transform: translateY(250px); 
+    }
+  }
+
+@keyframes moveUpCol {
+    0% {
+      transform: translateY(0px); 
+    }
+    50% {
+      transform: translateY(-140px); 
+    }
+    100% {
+      transform: translateY(-450px); 
+    }
+  }
+

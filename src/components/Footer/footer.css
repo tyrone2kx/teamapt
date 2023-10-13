@@ -1,0 +1,29 @@
+.upDown {
+    animation: upDown 1.2s ease-in-out 2s infinite; 
+}
+.moveDown {
+    animation: moveDown 1s ease-in-out 2s forwards; 
+}
+
+@keyframes upDown {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 15px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+    
+}
+
+@keyframes moveDown {
+    0% {
+        margin-bottom: 0px;
+    }
+    100% {
+        margin-bottom: -30px;
+    }
+    
+}
