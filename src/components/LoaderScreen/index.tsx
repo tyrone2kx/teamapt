@@ -4,7 +4,7 @@ import "./style.css";
 
 const LoaderScreen = () => {
   return (
-    <div className="App animate__animated  animate__fadeOut">
+    <div className="App animate__animated  animate__fadeOut animate__delay-4s">
       <div className="w-[70%] flex justify-center ">
         <div className="first-circle  h-[50px] w-fit border border-[#fe4f23] text-center rounded-full text-orange-500">
           <div className="icon-container1">

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Header from "../Header/Header";
+
 import "./our-advantage.css";
 import AnimatedHeading from "../AnimatedHeading/AnimatedHeading";
 import Footer from "../Footer/Footer";
@@ -8,17 +8,13 @@ import img1 from "assets/images/img1.jpg";
 import img2 from "assets/images/img2.jpg";
 import img3 from "assets/images/img3.jpg";
 import img4 from "assets/images/img4.jpg";
-import img5 from "assets/images/img5.jpg";
+
+
 
 const OurAdvantages = () => {
   return (
     <>
-      <div
-        onScroll={(e) => {
-          console.log(e);
-        }}
-        className="h-full overflow-hidden flex flex-col justify-between relative"
-      >
+      <div className="h-full overflow-hidden flex flex-col justify-between relative">
         <div />
         <div className="p-4">
           <AnimatedHeading />
@@ -76,7 +72,7 @@ const Card = ({
         className="rounded-xl h-full w-full flex flex-col justify-end bg-cover"
         style={{ ...style, backgroundImage: `url(${image})` }}
       >
-        <div className="flex items-center justify-center p-4">
+        <div className="flex items-center justify-center p-4 px-2">
           <Icon
             name={icon}
             className="!bg-white !h-[30px] !w-[30px] "

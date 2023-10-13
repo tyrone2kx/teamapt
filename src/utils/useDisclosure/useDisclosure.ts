@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-const useDisclosure = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+const useDisclosure = (def=false) => {
+  const [isOpen, setIsOpen] = useState<boolean>(def);
   const onOpen = () => setIsOpen(true);
   const onClose = () => setIsOpen(false);
   const toggle = () => setIsOpen(!isOpen);
